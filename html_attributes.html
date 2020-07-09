@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML属性篇</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>HTML属性篇</h1>
+			<p>属性是元素提供的附加信息</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown active">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>HTML属性</h2>
+					<ul class="list-introduce">
+					 	<li>HTML元素可以设置属性</li>
+						<li>属性可以在元素中添加附加信息</li>
+						<li>属性一般描述于开始标签</li>
+						<li>属性总是以名称/值对的形式出现，比如：name="value"。</li>
+					</ul>
+				</div>
+				<div class="detail" id="2">
+					<h2>属性实例</h2>
+					<p class="introduce">HTML链接由&lta&gt标签定义链接的地址在href属性中指定：</p>
+					<div class="code">
+						<ol>
+							<li>&lt href="https://www.baidu.com"&gt点击我访问百度&lt/a&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<ol>
+							<li><a href="http://www.runoob.com">点击我访问百度</a></li>
+						</ol>
+					</div>
+					<p class="introduce">上面的实例是在当前窗口访问百度的，如果想在新建立的窗口访问百度，请在属性栏中加入target="_blank"</p>
+					
+					
+				</div>
+				<div class="detail" id="3">
+					<h2>HTML属性常用引用属性值</h2>
+					<p class="introduce">属性值应该始终被包括在引号内。
+					<br>双引号是最常用的，不过使用单引号也没有问题。
+					</p>
+					<p class="attention">提示: 在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：name='John "ShotGun" Nelson'</p>
+					
+				</div>
+				<div class="detail" id="4">
+					<h2>使用小写属性</h2>
+					<p class="introduce">属性和属性值对大小写不敏感
+					<br>不过，万维网联盟在其HTML4推荐标准中推荐小写的属性/属性值。
+					<br>而新版本的（X）HTML要求使用小写属性。
+					</p>
+				</div>
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">HTML属性</a></li>
+					<li><a href="#2">属性实例</a></li>
+					<li><a href="#3">HTML属性常用引用属性值</a></li>
+					<li><a href="#4">使用小写属性</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

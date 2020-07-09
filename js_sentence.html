@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JAVASCRIPT语句</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>JavaScript语句</h1>
+			<p>JavaScript 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>JavaScript 语句</h2>
+					<p class="introduce">JavaScript 语句是发给浏览器的命令。</p>
+					<p class="introduce">这些命令的作用是告诉浏览器要做的事情。</p>
+					<p class="introduce">下面的 JavaScript 语句向 id="demo" 的 HTML 元素输出文本 "你好 Dolly" ：</p>
+					<div class="code">
+						<ol>
+							<li>document.getElementById("demo").innerHTML = "你好 Dolly";</li>
+						</ol>
+					</div>
+				</div>
+				<div class="detail" id="2">
+					<h2>分号 ;</h2>
+					<p class="introduce">分号用于分隔 JavaScript 语句。</p>
+					<p class="introduce">通常我们在每条可执行的语句结尾添加分号。</p>
+					<p class="introduce">使用分号的另一用处是在一行中编写多条语句。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>a = 5;</li>
+							<li>b = 6;</li>
+							<li>c = a + b;</li>
+						</ol>
+					</div>
+					<p class="introduce">以上实例也可以这么写:</p>
+					<div class="code">
+						<ol>
+							<li>a = 5; b = 6; c = a + b;</li>
+						</ol>
+					</div>
+					<p class="attention">您也可能看到不带有分号的案例。在 JavaScript 中，用分号来结束语句是可选的。</p>
+				</div>
+
+				<div class="detail" id="3">
+					<h2>JavaScript 代码</h2>
+					<p class="introduce">JavaScript 代码是 JavaScript 语句的序列。</p>
+					<p class="introduce">浏览器按照编写顺序依次执行每条语句。</p>
+					<p class="introduce">本例向网页输出一个标题和两个段落：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>document.getElementById("demo").innerHTML="你好 Dolly";</li>
+							<li>document.getElementById("myDIV").innerHTML="你最近怎么样?";</li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="detail" id="4">
+					<h2>JavaScript 代码块</h2>
+					<p class="introduce">JavaScript 可以分批地组合起来。</p>
+					<p class="introduce">代码块以左花括号开始，以右花括号结束。</p>	
+					<p class="introduce">代码块的作用是一并地执行语句序列。</p>
+					<p class="introduce">本例向网页输出一个标题和两个段落：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>function myFunction()</li>
+							<li>{</li>
+							<li>&nbspdocument.getElementById("demo").innerHTML="你好Dolly";</li>
+							<li>&nbspdocument.getElementById("myDIV").innerHTML="你最近怎么样?";</li>
+							<li>}</li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="detail" id="5">
+					<h2>JAVASCRIPT语句标识符</h2>
+					<p class="introduce">JavaScript 语句通常以一个 <strong>语句标识符</strong> 为开始，并执行该语句。<p>
+					<p class="introduce">语句标识符是保留关键字不能作为变量名使用。</p>
+					<p class="introduce">下表列出了 JavaScript 语句标识符 (关键字) ：</p>
+					<table border="" cellspacing="" cellpadding="">
+						<tr>
+							<th>语句</th><th>描述</th>
+						</tr>
+						<tr>
+							<td>break</td>
+							<td>用于跳出循环</td>
+						</tr>
+						<tr>
+							<td>catch</td>
+							<td>语句块，在 try 语句块执行出错时执行 catch 语句块。</td>
+						</tr>
+						<tr>
+							<td>continue</td>
+							<td>跳过循环中的一个迭代。</td>
+						</tr>
+						<tr>
+							<td>do ... while</td>
+							<td>执行一个语句块，在条件语句为 true 时继续执行该语句块。</td>
+						</tr>
+						<tr>
+							<td>for</td>
+							<td>在条件语句为 true 时，可以将代码块执行指定的次数。</td>
+						</tr>
+						<tr>
+							<td>for ... in	</td>
+							<td>用于遍历数组或者对象的属性（对数组或者对象的属性进行循环操作）。</td>
+						</tr>
+						<tr>
+							<td>function</td>
+							<td>定义一个函数</td>
+						</tr>
+						<tr>
+							<td>if ... else	</td>
+							<td>用于基于不同的条件来执行不同的动作。</td>
+						</tr>
+						<tr>
+							<td>return</td>
+							<td>退出函数</td>
+						</tr>
+						<tr>
+							<td>switch	</td>
+							<td>用于基于不同的条件来执行不同的动作。</td>
+						</tr>
+						<tr>
+							<td>throw</td>
+							<td>抛出（生成）错误 。</td>
+						</tr>
+						<tr>
+							<td>try	</td>
+							<td>实现错误处理，与 catch 一同使用。</td>
+						</tr>
+						<tr>
+							<td>var	  </td>
+							<td>声明一个变量。</td>
+						</tr>
+						<tr>
+							<td>while</td>
+							<td>当条件语句为 true 时，执行语句块。</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="detail" id="6">
+					<h2>空格</h2>
+					<p class="introduce">JavaScript 会忽略多余的空格。您可以向脚本添加空格，来提高其可读性。下面的两行代码是等效的。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>var person="lizonggen";</li>
+							<li>var person = "lizonggen";</li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class="detail" id="7">
+					<h2>对代码行进行折行</h2>
+					<p class="introduce">您可以在文本字符串中使用反斜杠对代码行进行换行。下面的例子会正确地显示：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>document.write("你好 \</li>
+							<li>世界!");</li>
+					</div>
+					<p class="introduce">不过，您不能像这样折行：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>document.write \</li>
+							<li>("你好世界!");</li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class="detail" id="8">
+					<h2>你知道吗？</h2>
+					<p class="introduce">JavaScript是脚本语言。浏览器会在读取代码的时候，逐行地执行脚本代码。而对于传统的编程来说，会在执行前对所有代码进行编译，如果编译失败就无法运行。</p>
+				</div>
+				
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">JAVASCRIPT语句</a></li>
+					<li><a href="#2">分号;</a></li>
+					<li><a href="#3">JavaScript 代码</a></li>	
+					<li><a href="#4">JavaScript 代码块</a></li>
+					<li><a href="#5">JAVASCRIPT语句标识符</a></li>
+					<li><a href="#6">空格</a></li>
+					<li><a href="#7">对代码行进行折行</a></li>
+					<li><a href="#8">你知道吗？</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				<span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

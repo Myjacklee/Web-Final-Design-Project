@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+		<title>前端学习</title>
+	</head>
+	<body>
+		<div class="header" id="header" style="background-image: url(img/alpine-panorama-4549445_1920.jpg);">
+			<h1>这是我的UI学习网页</h1>
+			<p class="my_inf">姓名：李宗根</p>
+			<p class="my_inf">学号：20171346014</p>
+			<p class="my_inf">班级：网络工程一班</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown ">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="UI-info">
+			<h2>你需要具备什么知识</h2>
+			<p>在继续需学习之前，你需要对下面的知识有基本的了解</p>
+			<ul class="list-introduce">
+				<li>HTML</li>
+			</ul>
+			<p>如果你还没有学习过相关的HTML知识，请点击<a href="index.html">此处</a>学习HTML相关的知识</p>
+		</div>
+		<hr>
+		<div class="UI-info">
+			<h2>什么是 CSS?</h2>
+			<p>通俗来讲，HTML是对网页的界面进行结构布局的，但是光有布局还远远不够，还需要对布局进行美化，CSS就可以达到对网页界面美化的效果，让界面更加地美观</p>
+			<ul class="list-introduce">
+				<li>CSS指层叠样式表（Cascading Style Sheets）</li>
+				<li>样式定义如何显示HTML元素</li>
+				<li>样式通常储存在<strong>样式表</strong>中</li>
+				<li>把样式添加到HTML 4.0中，是为了<strong>解决内容与表现分离的问题</strong></li>
+				<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+				<li>外部样式表通常储存在<strong>CSS文件</strong>中</li>
+				<li>多个样式定义可层叠为一个</li>
+			</ul>
+		</div>
+		<hr >
+		<div class="UI-info">
+			<h2>样式解决了一个很大的问题</h2>
+			<p>HTML标签原本被设计为用于定义文档内容，如下面的实例</p>
+			<div class="code">
+			<ol>
+				<li>&lth1&gt标题一&lt/h1&gt</li>
+				<li>&ltp&gt段落&ltp&gt</li>
+			</ol>
+			</div>
+			<p>样式表定义如何显示 HTML 元素，就像 HTML 中的字体标签和颜色属性所起的作用那样。样式通常保存在外部的 .css 文件中。我们只需要编辑一个简单的 CSS 文档就可以改变所有页面的布局和外观。</p>
+		</div>
+		<div class="row">
+			<a href="css_background.html">
+				<div class="column" id="1">
+					<div class="card">
+						<h2>CSS背景</h2>
+						<div class="fakeimg" style="background-image: url(img/83fae389gy1g8crygaeucg20go0go7wj.gif); color: white;">
+							CSS 背景属性用于定义HTML元素的背景。
+						</div>
+					</div>
+				</div>				
+			</a>
+
+			<a href="css_choice.html">
+				<div class="column" id="2">
+					<div class="card">
+						<h2>CSS选择器</h2>
+						<div class="fakeimg" style="background-image: url(img/iss052e023801_0.jpg); color: white;">
+							如果你要在HTML元素中设置CSS样式，你需要在元素中设置"id" 和 "class"选择器。
+						</div>
+					</div>
+				</div>				
+			</a>
+
+			<a href="css_create.html">
+				<div class="column" id="3">
+					<div class="card">
+						<h2>CSS创建</h2>
+						<div class="fakeimg" style="background-image: url(img/landscape-4527526_640.jpg); color: white;">
+							当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。
+						</div>
+					</div>
+				</div>				
+			</a>
+			
+			<a href="css_grammar.html">
+				<div class="column" id="4">
+					<div class="card">
+						<h2>CSS语法</h2>
+						<div class="fakeimg" style="color: white;">
+							CSS语法是CSS的基础。
+						</div>
+					</div>
+				</div>				
+			</a>
+			
+			<a href="css_text.html">
+				<div class="column" id="5">
+					<div class="card">
+						<h2>CSS文本</h2>
+						<div class="fakeimg" style="background-image: url(img/v2-3ce476215b9e0c16cb49c37904a604e2_r.jpg); color: white;">
+							该部分会介绍文本方面相关的应用。
+						</div>
+					</div>
+				</div>				
+			</a>
+
+		</div>
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon" style="background-image: url(img/ID.png);"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

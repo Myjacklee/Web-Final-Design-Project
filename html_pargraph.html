@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML段落篇</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>HTML段落篇</h1>
+			<p>HTML 可以将文档分割为若干段落。</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown active">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>HTML段落</h2>
+					<p class="introduce">段落是通过&ltp&gt标签来定义的。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltp&gt这是一个段落&lt/p&gt</li>
+							<li>&ltp&gt这是另外一个段落&lt/p&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>这是一个段落</p>
+						<p>这是另外一个段落</p>
+					</div>
+					<p class="attention">即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来</p>
+				</div>
+				<div class="detail" id="2">
+					<h2>HTML折行</h2>
+					<p class="introduce">如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 &ltbr&gt 标签：</p>
+					<div class="code">
+						<ol>
+							<li>&ltp&gt这个段落&lbr&gt显示了分行的效果</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>这个段落<br>显示了分行的效果</p>
+					</div>
+				</div>
+				<div class="detail" id="3">
+					<h2>HTML输出</h2>
+					<p class="introduce">我们无法确定 HTML 被显示的确切效果。屏幕的大小，以及对窗口的调整都可能导致不同的结果。
+					<br>对于 HTML，您无法通过在 HTML 代码中添加额外的空格或换行来改变输出的效果。
+					<br>当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。
+					</p>					
+				</div>
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">HTML段落</a></li>
+					<li><a href="#2">HTML折行</a></li>
+					<li><a href="#3">HTML输出</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

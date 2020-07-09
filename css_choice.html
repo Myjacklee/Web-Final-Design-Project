@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>id和class选择器</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>id和class选择器</h1>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>id 和 class 选择器</h2>
+					<p class="introduce">如果你要在HTML元素中设置CSS样式，你需要在元素中设置"id" 和 "class"选择器。</p>
+
+				</div>
+				<div class="detail" id="2">
+					<h2>id选择器</h2>
+					<p class="introduce">id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+					<p class="introduce">HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。</p>
+					<p class="introduce">以下的样式规则应用于元素属性 id="para1":</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>#para</li>
+							<li>{</li>
+							<li>	text-align:center;</li>
+							<li>	color:red;</li>
+							<li>}</li>
+						</ol>
+					</div>
+					<p class="attention">ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用。</p>
+				</div>
+				
+				<div class="detail" id="3">
+					<h2>class选择器</h2>
+					<p class="introduce">class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+					<p class="introduce">class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示：</p>
+					<p class="introduce">在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>.center{text-align:center;}</li>
+						</ol>
+					</div>
+					<p class="introduce">你也可以指定特定的HTML元素使用class。</p>
+					<p class="introduce">在以下实例中, 所有的 p 元素使用 class="center" 让该元素的文本居中:</p>
+					<div class="code">
+						<ol>
+							<li>p.center {text-align:center;}</li>
+						</ol>
+					</div>
+					<p class="attention">类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
+				</div>	
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">id 和 class 选择器</a></li>
+					<li><a href="#2">id选择器</a></li>
+					<li><a href="#3">class选择器</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

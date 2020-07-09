@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML元素篇</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>HTML元素篇</h1>
+			<p>HTML 文档由 HTML 元素定义。</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown active">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>HTML元素</h2>
+					<table border="" cellspacing="" cellpadding="" width="520px">
+						<tr>
+							<th>开始标签</th><th>元素内容</th><th>结束标签</th>
+						</tr>
+						<tr>
+							<td>&ltp&gt</td><td>这是一个段落</td><td>&lt/p&gt</td>
+						</tr>
+						<tr>
+							<td>&lta href="https://wwww.baidu.com"&gt</td><td>这是一个链接</td><td>&lt/a&gt</td>
+						</tr>
+
+					</table>
+					<p class="introduce">开始标签被称为<strong>起始标签</strong>(opening tag),结束标签常被称为<strong>闭合标签(closing tag)</strong></p>
+
+				</div>
+				<div class="detail" id="2">
+					<h2>HTML元素语法</h2>
+					<ul class="list-introduce"> 
+						<li>HTML元素是以开始标签起始的</li>
+						<li>HTML元素以结束标签终止</li>
+						<li>元素的内容是在开始标签与结束标签之间</li>
+						<li>某些HTML元素的内容具有空内容（empty content）</li>
+						<li>空元素在开始标签中进行关闭（以开始标签的结束而结束）</li>
+						<li>大多数HTML元素可以拥有属性</li>
+					</ul>
+					
+				</div>
+				<div class="detail" id="3">
+					<h2>嵌套的HTML元素</h2>
+					<p class="introduce">HTML文档由嵌套的HTML元素构成</p>
+					<h2>HTML文档代码实例</h2>
+					<div class="code">
+						<ol>
+							<li>
+								&lt!DOCTYPE html&gt
+							</li>
+							<li>&lthtml&gt</li>
+							<li></li>
+							<li>&ltbody&gt</li>
+							<li>&ltp&gt这是第一个段落。&lt/p&gt</li>
+							<li>&lt/body&gt</li>
+							<li></li>
+							<li>&lt/html&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>这是第一个段落。</p>
+					</div>
+					<h2>HTML实例解析</h2>
+					<h3>&ltp&gt元素：</h3>
+					<div class="code">
+						<ol>
+							<li>&ltp&gt这是第一个段落。&lt/p&gt</li>
+						</ol>
+					</div>
+					<p class="introduce">这个&ltp&gt元素定义了HTML文档中的一个段落
+					<br>这个元素拥有一个开始标签&ltp&gt以及一个结束标&lt/p&gt
+					<br>元素展示的内容是：这是第一个段落。
+					</p>
+					<h3>&ltbody&gt元素：</h3>
+					<div class="code">
+						<ol>
+							<li>&ltbody&gt</li>
+							<li>&ltp&gt这是第一个段落。&lt/p&gt</li>
+							<li>&lt/body&gt</li>
+						</ol>
+					</div>
+					<p class="introduce">&ltbody&gt元素定义了HTML文档的主体。
+					<br>这个元素拥有一个开始标签&ltbody&gt以及一个结束标签&lt/body&gt
+					<br>元素的另外一个内容是HTML元素（p元素）。
+					</p>
+					<h3>&lthtml&gt元素：</h3>
+					<div class="code">
+						<ol>
+							<li>
+								&lt!DOCTYPE html&gt
+							</li>
+							<li>&lthtml&gt</li>
+							<li></li>
+							<li>&ltbody&gt</li>
+							<li>&ltp&gt这是第一个段落。&lt/p&gt</li>
+							<li>&lt/body&gt</li>y
+							<li></li>
+							<li>&lt/html&gt</li>
+						</ol>
+					</div>
+					<p class="introduce">
+						&lthtml&gt元素定义了整个HTML文档
+						<br>这个元素拥有开始标签&lthtml&gt，以及一个结束标签&lt/html&gt
+						<br>元素内容是另外一个HTML元素（bod元素）
+					</p>
+				</div>
+				<div class="detail" id="4">
+					<h2>不要忘记结束标签</h2>
+					<p class="introduce">即使你忘记了使用结束标签，对于大多数浏览器也会正确地显示HTML</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltp&gt这是一个段落</li>
+						</ol>
+					</div>
+					<p class="introduce">
+						以上实例在浏览器中也能够正常显示，因为关闭标签是可选择的。
+						<br>但是不要依赖这种做法。忘记使用结束标签会产生不可预料的结果或错误。
+					</p>
+				</div>
+				<div class="detail" id="5">
+					<h2>标签对大小写不敏感</h2>
+					<p class="introduce">HTML标签对大小不敏感：&ltP&gt等同于&ltp&gt。许多网站多使用大写的HTML标签</p>
+					
+				</div>
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">HTML元素</a></li>
+					<li><a href="#2">HTML元素语法</a></li>
+					<li><a href="#3">嵌套的HTML元素</a></li>
+					<li><a href="#4">不要忘记结束标签</a></li>
+					<li><a href="#5">标签对大小写不敏感</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

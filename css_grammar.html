@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS语法篇</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>CSS语法篇</h1>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>CSS语法</h2>
+					<p class="introduce">CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明:</p>
+					<div class="code_result">
+						<img src="img/Snipaste_2019-10-28_22-16-08.png" width="50%">
+					</div>
+					<p>选择器通常是您需要改变样式的 HTML 元素。</p>
+					<p>每条声明由一个属性和一个值组成。</p>
+					<p>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p>
+					<h2>实例代码</h2>
+					<p>CSS声明总是以分号(;)结束，声明总以大括号({})括起来：</p>
+					<div class="code">
+						<ol>
+							<li>p {color:red;text-align:center;}</li>
+						</ol>
+					</div>
+					<p>当然，为了使代码的可阅读性增强，我们可以把代码的每一行修改为一个属性：</p>
+					<div class="code">
+						<ol>
+							<li>p</li>
+							<li>{</li>
+							<li>color:red;</li>
+							<li>text-align:center;</li>
+							<li>}</li>
+						</ol>
+					</div>
+
+				</div>
+				<div class="detail" id="2">
+					<h2>CSS注释</h2>
+					<p class="introduce">注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略它。</p>
+					<p class="introduce">CSS注释以 "/*" 开始, 以 "*/" 结束, 实例如下:</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>/*这是个注释*/</li>
+							<li>p</li>
+							<li>{</li>
+							<li>color:red;</li>
+							<li>text-align:center;</li>
+							<li>}</li>		
+							<li>/*这是另外一个注释*/</li>
+						</ol>
+					</div>
+
+				</div>
+	
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">CSS语法</a></li>
+					<li><a href="#2">CSS注释</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML基础篇</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>HTML基础篇</h1>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown active">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>HTML标题</h2>
+					<p class="introduce">HTML 标题（Heading）是通过&lth1&gt - &lth6&gt 标签来定义的.</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&lth1&gt这是一级标题&lt/h1&gt</li>
+							<li>&lth2&gt这是二级标题&lt/h2&gt</li>
+							<li>&lth3&gt这是三级标题&lt/h3&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<h1>这是一级标题</h1>
+						<h2 style="background: none; text-indent: 0px;">这是二级标题</h2>
+						<h3>这是三级标题</h3>
+					</div>
+				</div>
+				<div class="detail" id="2">
+					<h2>HTML段落</h2>
+					<p class="introduce">HTML段落是通过标签&ltp&gt来定义的.</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltp&gt学前端哪家强&lt/p&gt</li>
+							<li>&ltp&gt学前端哪家强&lt/p&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>学前端哪家强</p>
+						<p>学前端哪家强</p>
+					</div>
+				</div>
+				<div class="detail" id="3">
+					<h2>HTML链接</h2>
+					<p class="introduce">HTML链接是通过标签&lta&gt来定义的.</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>
+								<p>点击下方图片访问淘宝网</p>
+							</li>
+							<li>&lta href="https://www.taobao.com"&gt&ltimg scr="img/taobao.png"&gt&lt/a&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>点击下方图片访问淘宝网</p>
+						<a href="https://www.taobao.com"><img src="img/taobao.png"></a></a>
+					</div>
+				</div>
+				<div class="detail" id="4">
+					<h2>HTML图像</h2>
+					<p class="introduce">HTML图像是通过标签&ltimg&gt来定义的.</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltimg scr="img/v2-3ce476215b9e0c16cb49c37904a604e2_r.jpg"&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<img src="img/v2-3ce476215b9e0c16cb49c37904a604e2_r.jpg" width="50%">
+					</div>
+				</div>
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">HTML标题</a></li>
+					<li><a href="#2">HTML段落</a></li>
+					<li><a href="#3">HTML链接</a></li>
+					<li><a href="#4">HTML图像</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				 <span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

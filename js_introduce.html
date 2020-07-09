@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JAVASCRIPT简介</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js_introduce.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>JavaScript简介</h1>
+			<p>JavaScript 是互联网上最流行的脚本语言，这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>JavaScript 是脚本语言</h2>
+					<p class="introduce">JavaScript 是脚本语言</p>
+					<p class="introduce">JavaScript 是可插入 HTML 页面的编程代码。</p>
+					<p class="introduce">JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。</p>
+					<p class="introduce">JavaScript 很容易学习。</p>
+				</div>
+				<div class="detail" id="2">
+					<h2>JavaScript：直接写入 HTML 输出流</h2>
+					<p class="introduce"></p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>document.write("&lth1&gt这是一个标题&lt/h1&gt");</li>
+							<li>document.write("&ltp&gt这是一个段落。&lt/p&gt")</li>
+						</ol>
+					</div>
+					<p class="attention">您只能在 HTML 输出中使用 document.write。如果您在文档加载后使用该方法，会覆盖整个文档。</p>
+
+				</div>
+
+				<div class="detail" id="3">
+					<h2>JavaScript：对事件的反应</h2>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltbutton type="button" onclick="alert('欢迎!')"&gt点我!&lt/button&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<button type="button" onclick="alert('JavaScript真香!')">点我!</button>
+					</div>
+					<p class="introduce">alert() 函数在 JavaScript 中并不常用，但它对于代码测试非常方便。</p>
+					<p class="introduce">onclick 事件只是您即将在本教程中学到的众多事件之一。</p>
+				</div>
+
+				<div class="detail" id="4">
+					<h2>JavaScript：改变 HTML 内容</h2>
+					<p class="introduce">使用js可以改变页面上的一些内容，而不需要重新去刷新页面，这个在提示用户信息的时候起了非常大的作用。</p>
+
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>x=document.getElementById("demo"); //查找元素</li>
+							<li>x.innerHTML="Hello JavaScript"; //改变内容</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<button type="button" onclick="detail_4()">点击我</button>
+						<p id="demo"></p>
+					</div>
+					<p class="introduce">您会经常看到 document.getElementById("some id")。这个方法是 HTML DOM 中定义的。</p>
+					<p class="introduce">DOM (Document Object Model)（文档对象模型）是用于访问 HTML 元素的正式 W3C 标准。</p>
+				</div>
+
+				<div class="detail" id="5">
+					<h2>JavaScript：改变 HTML 图像</h2>
+					<p>本例会动态地改变 HTML &ltimage&gt 的来源（src）：<p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>function detail_5(){</li>
+							<li>&nbsp element=document.getElementById('myImage');</li>	
+							<li>&nbsp element.src="img/zhenxiang_2.png";</li>	
+							<li>}</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>点击下方的图片，图片会发生改变</p>
+						<img id="myImage" onclick="detail_5()" src="img/zhenxiang_1.png" width="300" height="300" >
+					</div>
+					<p class="introduce">上面实例代码的作用意思是检索html网页当中id为“myImage”的元素，然后获取到它的src属性，并将它改变为"img/zhenxiang_2.png"</p>
+					<p class="attention">JavaScript能够改变任意HTML元素的大多数属性，而不仅仅是图片</p>
+				</div>
+
+				<div class="detail" id="6">
+					<h2>JavaScript：改变 HTML 样式</h2>
+					<p class="introduce">改变 HTML 元素的样式，属于改变 HTML 属性的变种。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>x=document.getElementById("demo")  //找到元素</li>
+							<li>x.style.color="#ff0000";           //改变样式</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<button type="button" onclick="detail_6()">点击我</button>
+						<p id="detail_6_button" style="font-size: 20px; font-weight: bold;">点击上方的按钮后我的颜色会发生改变</p>
+					</div>
+				</div>
+
+				<div class="detail" id="7">
+					<h2>JavaScript：验证输入</h2>
+					<p class="introduce">在实际的开发当中，如果我们需要用户输入一些信息，我们常常需要检验用户输入的合法性：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>if isNaN(x){</li>
+							<li>&nbsp alert("不是数字");</li>
+							<li>}</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p>请输入纯数字</p>
+						<input type="text" id="detail_7_input" >
+						<button type="button" onclick="detail_7()">校验</button>
+					</div>
+				</div>
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">JavaScript是脚本语言</a></li>
+					<li><a href="#2">JavaScript：直接写入HTML输出流</a></li>
+					<li><a href="#3">JavaScript：对事件的反应</a></li>
+					<li><a href="#4">JavaScript：改变 HTML 内容</a></li>
+					<li><a href="#5">JavaScript：改变 HTML 图像</a></li>
+					<li><a href="#6">JavaScript：改变 HTML 样式</a></li>
+					<li><a href="#7">JavaScript：验证输入</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				<span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

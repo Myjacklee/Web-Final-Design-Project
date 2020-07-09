@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+ 
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url(../img/Snipaste_2019-10-18_23-04-02.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  color: white;
+}
+
+/*UI introduce information*/
+.UI-info{
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #f8f4ed;
+}
+
+ul.list-introduce li{
+	list-style-type:none ;
+	background: url(../img/benefits.png) no-repeat -5px -5px;
+	background-size:30px;
+	text-indent: 25px;
+}
+
+/* 导航条 */
+
+/* 导航条链接 */
+.topnav ul li a, .dropbtn {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #94070A;
+}
+
+ 
+/* 链接颜色修改 */
+.dropdown:hover .dropbtn{
+  background-color: #ddd;
+  font-weight: bold;
+  color:#94070A;
+}
+
+.active .dropbtn{
+	background-color: #ddd;
+	color: #94070A;
+}
+.dropdown{
+	display: inline-block;
+	float: left;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ 
+.dropdown-content a{
+	color: #94070A;
+	padding:12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+	font-weight: bold;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+ /*创建一列*/
+ .column{
+	 float: left;
+	 width:33.333%;
+	 padding: 15px;
+	 color: #000000;
+ }
+ 
+/* 图像部分 */
+.fakeimg {
+  background-image: url(../img/ChMkJ1g2YQeIbYQRABTlVmUrO4AAAYB0gGpqwMAFOVu246.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  height:200px;
+}
+
+/* 鼠标移动到图片处改变大小 */
+.card:hover{
+	
+	box-shadow: 0px 0px 20px 5px #666666;
+
+	transform: scale(1.02);
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+  
+}
+
+/*实例代码*/
+div.code{
+	font-size: 15px;
+	font-weight: bold; 
+	border-left: solid 3px #6ce26c; 
+	width: 300px;
+	text-indent: 10px;
+}
+
+
+
+/*片效果边缘*/
+div.row .column .card{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+ .row{
+	 background-color: #34adc2;
+	 margin-top:20px;
+	 width: 100%;
+ }
+/* 底部 */
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .column{   
+    width: 50%;
+    padding: 0;
+  }
+}
+ 
+ 
+/* 响应式布局 - 屏幕尺寸小于 700px 时，两列布局改为上下布局 */
+@media screen and (max-width: 700px) {
+  .column{   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+/*头部部分的学生信息*/
+p.my_inf{
+	font-size: 20px;
+	
+}
+
+/*活动的导航条特殊显示*/
+div.topnav .active{
+	background-color: #ddd;
+	color: #94070A;	
+	font-weight: bold;
+}
+
+/* 底部 */
+.footer {
+	position: relative;
+	overflow: hidden;
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+}
+
+
+
+.footer .inf {
+	width: auto;
+	font-size: 23px;
+	line-height: 24px;
+	color: #666;
+	float: left;
+	margin: 0 37.5px;
+}
+
+.icon {
+	background: url(../img/name.png) no-repeat;
+	float: left;
+	width: 22px;
+	height: 22px;
+	margin: 1px 8px 0 0;
+	background-size: 23px;
+
+}
+
+.icon-content {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	line-height: 0px;
+}
+
+.code_result {
+	padding: 0 0 0 20px;
+	border-left: solid 3px #6ce26c;
+
+}

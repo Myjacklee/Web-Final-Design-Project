@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JAVASCRIPT语法</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js_grammer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js_usage_detail_6.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>JavaScript语法</h1>
+			<p>JavaScript JavaScript 是一个程序语言。语法规则定义了语言结构。</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>JavaScript 语法</h2>
+					<p class="introduce">JavaScript 是一个脚本语言。</p>
+					<p class="introduce">它是一个轻量级，但功能强大的编程语言。</p>
+				</div>
+				<div class="detail" id="2">
+					<h2>JavaScript 字面量</h2>
+					<p class="introduce">在编程语言中，一般固定值称为字面量，如 3.14。</p>
+					<p class="introduce">数字（Number）字面量 可以是整数或者是小数，或者是科学计数(e)。</p>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<button type="button" onclick="detail_2()">点击</button>
+					</div>
+					<p class="attention">window.alert()大多数时候是用在JavaScript页面调试，比如需要显示一个变量的值时候。</p>
+				</div>
+
+				<div class="detail" id="3">
+					<h2>操作 HTML 元素</h2>
+					<p class="introduce">如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。</p>
+					<p class="introduce">请使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容：</p>		
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltscript&gt</li>
+							<li>document.getElementById("demo").innerHTML="段落已修改";</li>
+							<li>&lt/script&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<button type="button" onclick="detail_3()">请点击我</button>
+						<p id="demo_3">文本未被改变~</p>
+					</div>
+					<p class="introduce">以上 JavaScript 语句（在 &ltscript&gt 标签中）可以在 web 浏览器中执行：</p>
+					<p class="introduce">document.getElementById("demo_3") 是使用 id 属性来查找 HTML 元素的 JavaScript 代码 。</p>
+					<p class="introduce">innerHTML = "段落已修改。" 是用于修改元素的 HTML 内容(innerHTML)的 JavaScript 代码。</p>
+				</div>
+
+				<div class="detail" id="4">
+					<h2>在本教程中</h2>
+					<p class="introduce">在大多数情况下，在本教程中，我们将使用上面描述的方法来输出：</p>
+					<p class="introduce">上面的例子直接把 id="demo" 的 &ltp&gt 元素写到 HTML 文档输出中：</p>					
+				</div>
+
+				<div class="detail" id="5">
+					<h2>写到 HTML 文档</h2>
+					<p class="introduce">出于测试目的，您可以将JavaScript直接写在HTML 文档中：<p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>document.write(Date());</li>
+						</ol>
+					</div>
+					<p class="attention">请使用 document.write() 仅仅向文档输出写内容。</p>
+					<p class=""></p>
+				</div>
+
+				<div class="detail" id="6">
+					<h2>写到控制台</h2>
+					<p class="introduce">如果您的浏览器支持调试，你可以使用 console.log() 方法在浏览器中显示 JavaScript 值。</p>
+					<p class="introduce">浏览器中使用 F12 来启用调试模式， 在调试窗口中点击 "Console" 菜单。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltscript&gt</li>
+							<li>a=5;</li>
+							<li>b=6;</li>
+							<li>c=a+b;</li>
+							<li>console.log(c)</li>
+							<li>&lt/script&gt</li>
+						</ol>
+					</div>
+					<h2>实例console截图效果</h2>
+					<div class="code_result">
+						<img src="img/Snipaste_2019-11-11_10-16-00.png" width=50%>
+					</div>
+					<p class="attention">程序中调试测试，查找以及减少bug的过程。</p>
+				</div>
+
+				
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">JavaScript 显示数据</a></li>
+					<li><a href="#2">使用 window.alert()</a></li>
+					<li><a href="#3">操作 HTML 元素</a></li>					
+					<li><a href="#4">在本教程中</a></li>
+					<li><a href="#5">写到 HTML 文档</a></li>
+					<li><a href="#6">写到控制台</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				<span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

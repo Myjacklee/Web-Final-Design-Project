@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JAVASCRIPT用法</title>
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function detail_5(){
+				document.getElementById("demo").innerHTML="我的第一个JavaScript函数";
+			}
+		</script>
+		<script src="js/js_usage_detail_6.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<h1>JavaScript用法</h1>
+			<p>HTML 中的脚本必须位于 &ltscript&gt 与 &lt/script&gt 标签之间。</p>
+		</div>
+		<div class="topnav" id="topnav">
+			<ul>
+				<div class="dropdown">
+					<a href="index.html"  class="dropbtn">HTML</a>
+					<div class="dropdown-content">
+						<a href="html_basics.html">HTML基础篇</a>
+						<a href="html_element.html">HTML元素篇</a>
+						<a href="html_pargraph.html">HTML段落篇</a>
+						<a href="html_attributes.html">HTML属性篇</a>
+						<a href="html_title.html">HTML标题篇</a>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="css.html"  class="dropbtn">CSS</a>
+					<div class="dropdown-content">
+						<a href="css_background.html">CSS背景</a>
+						<a href="css_choice.html">CSS选择器</a>
+						<a href="css_create.html">CSS创建</a>
+						<a href="css_grammar.html">CSS语法</a>
+						<a href="css_text.html">CSS文本</a>
+					</div>
+				</div>	
+				<div class="dropdown active">
+					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
+					<div class="dropdown-content">
+						<a href="js_grammar.html">JavaScript语法</a>
+						<a href="js_introduce.html">JavaScript简介</a>
+						<a href="js_output.html">JavaScript输出</a>
+						<a href="js_sentence.html">JavaScript语句</a>
+						<a href="js_usage.html">JavaScript用法</a>
+					</div>
+				</div>					
+			</ul>
+
+			
+			
+		</div>
+		<div class="row">
+			<div class="left_column">
+				<div class="detail" id="1">
+					<h2>&ltscript&gt标签</h2>
+					<p class="introduce">如需在 HTML 页面中插入 JavaScript，请使用 &ltscript&gt 标签。</p>
+					<p class="introduce">&ltscript&gt 和 &lt/script&gt 会告诉 JavaScript 在何处开始和结束。</p>
+					<p class="introduce">&ltscript&gt 和 &lt/script&gt 之间的代码行包含了 JavaScript:</p>
+					<div class="code">
+						<ol>
+							<li>&ltscript&gt</li>
+							<li>alert("我的第一个 JavaScript");</li>
+							<li>&lt/script&gt</li>
+						</ol>
+					</div>
+					<p class="attention">那些老旧的实例可能会在 &ltscript&gt 标签中使用 type="text/javascript"。现在已经不必这样做了。JavaScript 是所有现代浏览器以及 HTML5 中的默认脚本语言。</p>
+				</div>
+				<div class="detail" id="2">
+					<h2>&ltbody&gt中的JavaScript</h2>
+					<p class="introduce">在本例中，JavaScript 会在页面加载时向 HTML 的 &ltbody&gt 写文本：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>document.write("&lth1&gt这是一个标题&lt/h1&gt");</li>
+							<li>document.write("&ltp&gt这是一个段落。&lt/p&gt")</li>
+						</ol>
+					</div>
+					<p class="attention">您只能在 HTML 输出中使用 document.write。如果您在文档加载后使用该方法，会覆盖整个文档。</p>
+
+				</div>
+
+				<div class="detail" id="3">
+					<h2>JavaScript函数和事件</h2>
+					<p class="introduce">上面例子中的 JavaScript 语句，会在页面加载时执行。</p>
+					<p class="introduce">通常，我们需要在某个事件发生时执行代码，比如当用户点击按钮时。</p>
+					<p class="">如果我们把 JavaScript 代码放入函数中，就可以在事件发生时调用该函数。</p>
+					<p class="introduce">您将在稍后的章节学到更多有关 JavaScript 函数和事件的知识。</p>
+					
+				</div>
+
+				<div class="detail" id="4">
+					<h2>在 &lthead&gt 或者 &ltbody&gt 的JavaScript</h2>
+					<p class="introduce">您可以在 HTML 文档中放入不限数量的脚本。</p>
+					<p class="introduce">脚本可位于 HTML 的 &ltbody&gt 或 &lthead&gt 部分中，或者同时存在于两个部分中。</p>
+					<p class="introduce">通常的做法是把函数放入 &lthead&gt 部分中，或者放在页面底部。这样就可以把它们安置到同一处位置，不会干扰页面的内容。</p>
+					
+				</div>
+
+				<div class="detail" id="5">
+					<h2>&lthead&gt 中的 JavaScript 函数</h2>
+					<p class="introduce">在本例中，我们把一个 JavaScript 函数放置到 HTML 页面的 &lthead&gt 部分。<p>
+					<p class="introduce">该函数会在点击按钮时被调用：</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltscript&gt</li>
+							<li>function detail_5(){</li>
+							<li>&nbsp document.getElementById("demo").innerHTML="我的第一JavaScript函数"</li>	
+							<li>}</li>
+							<li>&lt/script&gt</li>
+							<li>&ltbutton type="button" onclick="detail_5()"&gt尝试一下&lt/button&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<p id="demo">点击按钮，我的内容会发生改变</p>
+						<button type="button" onclick="detail_5()">尝试一下</button>
+					</div>
+				</div>
+
+				<div class="detail" id="6">
+					<h2>外部的 JavaScript</h2>
+					<p class="introduce">也可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。</p>
+					<p class="introduce">外部 JavaScript 文件的文件扩展名是 .js。</p>
+					<p class="introduce">如需使用外部文件，请在 &ltscript&gt 标签的 "src" 属性中设置该 .js 文件：</p>
+					<p class="introduce">下方实例将会从外部的js文件夹中引入一个名为js_usage_detail_6.js的js文件。</p>
+					<h2>实例代码</h2>
+					<div class="code">
+						<ol>
+							<li>&ltscript src="js/js_usage_detail_6.js"&gt&lt/script&gt</li>
+						</ol>
+					</div>
+					<h2>实例效果</h2>
+					<div class="code_result">
+						<button type="button" onclick="detail_6()">点击我</button>
+						<p id="detail_6_button" style="font-size: 20px; font-weight: bold;">点击上方的按钮后我的颜色会发生改变</p>
+					</div>
+					<p class="attention"></p>
+				</div>
+
+				
+			</div>
+			<div class="right_column">
+				<h2>快速导航栏</h2>
+				<ul>
+					<li><a href="#1">&ltscript&gt标签</a></li>
+					<li><a href="#2">&ltbody&gt中的JavaScript</a></li>
+					<li><a href="#3">JavaScript函数和事件</a></li>					
+					<li><a href="#4">在 &lthead&gt 或者 &ltbody&gt 的JavaScript</a></li>
+					<li><a href="#5">&lthead&gt中的JavaScript函数</a></li>
+					<li><a href="#6">外部的 JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="inf">
+				<span class="icon"></span><span class="icon-content">姓名：李宗根</span>
+			</div>
+			<div class="inf">
+				<span class="icon"></span> <span class="icon_content" id="test">学号：20171346014</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：17级网络工程1班</span>
+			</div>
+			<div class="inf">
+				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：li_zonggen@qq.com</span>
+			</div>
+		</div>
+	</body>
+</html>

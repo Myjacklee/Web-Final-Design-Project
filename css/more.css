@@ -1,0 +1,225 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: #f1f1f1;
+	min-width: 1153px;
+}
+
+/* 头部标题 */
+.header {
+	padding: 30px;
+	text-align: center;
+	background-image: url(../img/v2-52e9c131c7a2f74d0fca086f5080c5b2_r.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* 导航条 */
+
+/* 导航条链接 */
+.topnav ul li a, .dropbtn {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #94070A;
+}
+
+ 
+/* 链接颜色修改 */
+.dropdown:hover .dropbtn{
+  background-color: #ddd;
+  font-weight: bold;
+  color:#94070A;
+}
+
+.active .dropbtn{
+	background-color: #ddd;
+	color: #94070A;
+}
+.dropdown{
+	display: inline-block;
+	float: left;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ 
+.dropdown-content a{
+	color: #94070A;
+	padding:12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+	font-weight: bold;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+	background-color: #ddd;
+	color: #94070A;
+	font-weight: bold;
+}
+
+/*活动的导航条特殊显示*/
+div.topnav .active {
+	background-color: #ddd;
+	color: #94070A;
+	font-weight: bold;
+}
+
+/*详细内容栏目*/
+div.detail {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+
+}
+
+.detail h2 {
+	background: url(../img/title.png) no-repeat 0px 4px;
+	background-size: 23px;
+	text-indent: 25px;
+}
+
+.detail p.attention{
+	background: url(../img/attention.png) no-repeat 3px 2px;
+	background-size: 18px;
+	text-indent: 25px;
+	color: red;
+}
+
+.code {
+	font-size: 15px;
+	font-weight: bold;
+	border-left: solid 3px #6ce26c;
+	text-indent: 10px;
+}
+
+.code_result {
+	padding: 0 0 0 20px;
+	border-left: solid 3px #6ce26c;
+
+}
+
+.detail .introduce {}
+
+.left_column {
+	width: 80%;
+}
+
+.right_column {
+	width: 280px;
+	float: left;
+	padding-left: 20px;
+	position: fixed;
+	top: 205px;
+	right: 0px;
+}
+
+/*右部导航条*/
+.right_column ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+.right_column li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #dfded7;
+	box-shadow: 0px 0px 10px 0px #272822;
+	transition: all 0.5s ease;
+	
+}
+.right_column li a:hover{
+	transform: scale(1.02);
+}
+
+/*
+.right_column li {
+	border-bottom: 2px solid #bbb;
+}
+
+.right_column li:last-child {
+	border-bottom: none;
+} 
+ */
+
+
+
+
+
+/* 底部 */
+.footer {
+	position: relative;
+	overflow: hidden;
+	width: 1300px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+}
+
+.row {
+	width: 100%;
+}
+
+.footer .inf {
+	width: auto;
+	font-size: 23px;
+	line-height: 24px;
+	color: #666;
+	float: left;
+	margin: 0 37.5px;
+}
+
+.icon {
+	background: url(../img/name.png) no-repeat;
+	float: left;
+	width: 22px;
+	height: 22px;
+	margin: 1px 8px 0 0;
+	background-size: 23px;
+
+}
+
+.icon-content {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	line-height: 0px;
+}
+ul.list-introduce li{
+	list-style-type:none ;
+	background: url(../img/benefits.png) no-repeat -5px -5px;
+	background-size:30px;
+	text-indent: 25px;
+}
