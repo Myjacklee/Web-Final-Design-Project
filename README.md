@@ -4,4 +4,4 @@
 
 + 效果图
 
-![主界面效果图](.\display\main.png)
+![主界面效果图](/display/main.png)
